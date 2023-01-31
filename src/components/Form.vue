@@ -9,9 +9,9 @@
         
         <label>Curso</label><br>
         <select id="curso" name="curso" required="required">
-          <option disabled value=""></option>
+          <option  disabled value=""></option>
           <option value="Matemática">Matemática</option>
-          <option value="Letras">Rio de Janeiro</option>
+          <option value="Letras">Letras</option>
           <option value="Geografia">Geografia</option>
         </select><br>
         
@@ -72,13 +72,8 @@ div{
   border-style: solid;
   border-color: #5470af;
   border-width: 2px;
+}
 
-  
-}
-form{
-  border-width: 2px;
-  border-color: #5470af;
-}
 label{
   margin-left: 10px;
   font-size: 1em;
@@ -86,6 +81,13 @@ label{
 }
 
 select{
+   margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 375px;
   height: 50px;
   margin-bottom: 15px;
@@ -94,13 +96,67 @@ select{
   background-color: #FFF;
   border-color: #5470af;
   border-width: 2px;
+
+  align-items: center;
+  cursor: pointer;
+
+  background-image:
+    linear-gradient(60deg, transparent 50%, rgb(255, 255, 255) 50%),
+    linear-gradient(120deg, rgb(250, 250, 253) 50%, transparent 50%),
+    linear-gradient(to right, #5470af, #5470af);
+  background-position:
+    calc(100% - 23px) calc(1em + 5px),
+    calc(100% - 13px) calc(1em + 5px),
+    99.4% 50%;
+  background-size:
+    10px 15px,
+    10px 15px,
+    42px 42px;
+  background-repeat: no-repeat;
+ 
 }
-select::after{
-  content:'\25BC';
-  color:#FFF;
 
 
+#dcurso{
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+
+/* arrows */
+
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
 }
+
+
 input{
   width: 370px;
   height: 50px;
